@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <header>
+        <figure class="logo">
+            <img src="imagenes/logo.jpg" alt="">
+        </figure>
+    </header>
+
+    <section>
+        <div class="ancho cabecera">
+            <div class="parte1">
+                <div>
+                    <p class="etiqueta">Our Team</p>
+                    <h1>A dedicated Team of Experts</h1>
+                </div>
+                <p class="parrafo1">Passion, experience and fierce commitment to education are the cornestones of our success in the beauty industry</p>
+
+                <p class="parrafo2">We beliebe that being the largest SPA in the area is not enough in itself to satisfacy the needs of our customers. For this reason we have built up a staff of specialized prodessionals who are proud to welcome you to our hotel, present What We Do, listen to your needs and guarantee weel-being ans relaxation during your stay at our SPA Resort.</p>
+
+                <p class="parrafo2">Everyone in pur team is a certified specialist capable of delivering a unique service of high quality you won't find anywhere else iun modern spa ans resort industry.</p>
+
+                <div class="botones negritas">
+                    <a href="#" class="btn_rojo">LEARN MORE</a>
+                    <a href="#" class="btn_blanco">VIEW ALL TEAM</a>
+                </div>
+            </div>
+
+            <div class="parte2">
+                <article>
+                    <figure>
+                        <img src="imagenes/foto1.jpg" alt="">
+                    </figure>
+
+                    <div class="etiqueta2">
+                        <p class="rojo negritas etiqueta3">Jessica Cooper</p>
+                        <p class="etiqueta4">Esthetican</p>
+                    </div>
+
+                    <div class="redesSociales">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+
+                    <a href="#" class="btn_rojo" id="btn">GET IN TOUCH</a>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="imagenes/foto2.jpg" alt="">
+                    </figure>
+
+                    <div class="etiqueta2">
+                        <p class="rojo negritas etiqueta3">Robert Wagner</p>
+                        <p class="etiqueta4">Hairdresser</p>
+                    </div>
+
+                    <div class="redesSociales">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+
+                    <a href="#" class="btn_rojo" id="btn2">GET IN TOUCH</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="fondomodal" id="modal">
+
+        <div class="fondoblanco">
+
+            <i class="fa-solid fa-circle-xmark cerrar" id="btncerrar"></i>
+            
+            <h3>Conctac Us</h3>
+
+            <p class="parrafo2">If you have any question concerning our servicies, please full out the contact form below.
+            </p>
+
+            <input type="text" placeholder="Nombre: *">
+            <input type="text" placeholder="Email: *">
+            <input type="text" placeholder="Message: *" class="mensaje">
+
+            <a href="#" class="btn_rojo2">Submit</a>
+        </div>
+
+    </section>
+
+    <footer></footer>
+
+
+    <!--FUNCIONES JAVASCRIPT -->
+
+    <script>
+        var fondomodal = document.getElementById("modal");
+        var btn = document.getElementById("btn");
+        var cerrar = document.getElementById("btncerrar");
+
+        
+        btn.onclick = function(){
+            fondomodal.style.display = "flex";
+        };
+
+        btn2.onclick = function(){
+            fondomodal.style.display = "flex";
+        };
+
+        cerrar.onclick = function(){
+            fondomodal.style.display = "none";
+        };
+
+        window.onclick =  function(event){
+            if(event.target == fondomodal){
+                fondomodal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
